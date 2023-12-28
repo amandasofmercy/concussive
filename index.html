@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghost_Of_Mercy</title>
+<link rel="stylesheet" href="./concussive/concussive.css"> 
+<body>
+    <header><a>SACs por Módulo</a></header>
+    <section> <!--SACs de Configurações-->
+        <h3>Configurações</h3>
+        <div>. 14481 Análise de crédito: foi consultar um pedido na tela de análise de crédito, e o mesmo constava como banco indefinido. Teria que relacionar o cliente com o banco.</div>
+        <div>. 14548 Cadastro da grade incorreta: cadastrou referência com grade incorreta, e queria editar a grade. Para conseguir editar a grade, teria que desmarcar o check-box EXCEÇÕES da referência, que libera a edição da grade.</div>
+        <div>. 14657 Não conseguiu finalizar a venda: ao finalizar uma venda, aparece o aviso "Guichê não habilitado para o usuário", só que o usuário não tinha vendedor e guichê cadastrado. Para isso, ela teria que editar e incluir o vendedor e o guichê para o usuário.</div>
+        <div>. 14663 Conjunto não consta no estoque: tem um conjunto definido, mas os componentes constavam no estoque, mas na tela de definição de conjuntos não constava o saldo. Mas como os componentes estavam na última fase de produção, ela teria que terminar a produção, e depois da produção ela conseguiria atender as peças.</div>
+        <div>. 14681 Envio de email direto no gerenciador de NFe: perguntou como enviar e-mail direto na tela de "Gerenciador de NFe". Para isso tem que habilitar o envio na tela 'Relacionamento de processos com email', selecionar o funcionário com email cadastrado e habilitar o recurso de TI na tela de funcionários.</div>
+        <div>. 14720 Representante sem carteira de cliente: tem um presentante novo, mas no sistema dele, não aparece a carteira de cliente. E teria que liberar o acesso para ele, na tela 'restrição de tipos de pessoas'.</div>
+        <div>. 14741 Ramificações na Logística: ao listar um relatório de pedidos por representante, não aparece o tipo de produto, puxando da logística dinâmica. A maioria dos relatórios puxam apenas 3 ramificações, a que ele estava puxando tinha 4 ramificações. Ele podia editar e mover os tipos de peças para a terceira ramificação.</div>
+        <div>. 14749 Liberação de botões de ação: quer liberar alguns botões de ação apenas para determinados funcionários, e para isso ele teria de consultar as telas de 'restrição de programas' e 'restrição de botões'.</div>
+        <div>. 15074 Relatório de pessoas: pergunta se tem alguma tela do CTêxtil que gera um relatório apenas de pessoas jurídicas. A alternativa seria imprimir o relatório em Excel e remover as pessoas físicas durante a edição, mas que no formato PDF não seria possível essa alteração.</div>
+        <div>. 15086 Alteração de grade: perguntou se é possível alterar a grade de uma referência sem gerar transtornos para as referências que já usam essa mesma grade. É possível alterar, mas vai interferir nas referências que utilizam essa mesma grade.</div>
+        <div>. 15142 Cópia de locais para filial: queria copiar locais da matriz para filiais Holding, mas não achou as mesmas para fazer a cópia. Para as empresas aparecerem e realizar as cópias, teria que desmarcar o check-box 'Holding' na tela de 'manutenção de empresas'.</div>
+    </section>
+    <section> <!--SACs de Comercial parte 1-->
+        <h3>Comercial</h3>
+        <div>. 14507 Permissão de preço diferente: não consegue cadastrar preços diferentes, classificados pelas grades maior e menor, dentro da tela de 'manutenção de tipos de pedidos'. Para ela marcar o checkbox 'permite preço diferente', ela precisava do acesso ao botão e pedir isso para o administrador.</div>
+        <div>. 14522 Situação incorreta NFC-e: no CTêxtil, duas NFCs estavam rejeitadas, mas no SEFAZ foram autorizadas. Feita a correção do status da nota em  `Manutenção do sistema` - `Suporte` - `Ajuste situação NF-e` e colar a chave da nota fiscal e selecionar a nova situação para atualizar.</div>
+        <div>. 14530 Visualização de NF pré-transmissão: perguntou se é possível ver a DANFE da nota fiscal antes de autorizar ela no SEFAZ. E é impossível.</div>
+        <div>. 14576 Pedido sem parâmetros: ao tentar confirmar a emissão de um pedido, a tela exibe o aviso 'Pedido não possui parâmetros', o pedido não estava sendo confirmado porque ele não tinha política comercial deinida no tipo de pedido.</div>
+        <div>. 14605 NF de devolução errada: gerou nota de devolução, mas queria atender as peças de uma vez, pois tinha atendido parcialmente. Porém, a nota de devolução foi feita contra a própria empresa (BRTC), e a nota havia sido cancelada depois do prazo. Isso causaria uma divergência com informações contábeis. Teria que suspender o pedido, editar e adicionar as referências devolvidas novamente, gerar o romaneio e faturar.</div>
+        <div>. 14612 Relatório de comissões: ao puxar um relatório do gerenciador de comissões por representantes, o mesmo puxa o valor com desconto, ao invés do valor original sem desconto, como o desejado. Para as comissões serem contabilizadas em cima do valor bruto, teria que configurar o parâmetro "Valor base para cálculo de comissão", na aba Comercial. O que fosse definido no parâmetro iria interferir nas comissões de todos os títulos emitidos.</div>
+        <div>. 14621 Transferir romaneio entre empresas: cliente fez uma transferência de dois romaneios para uma filial por engano e queria reverter o processo. Para isso, ele teria que marcar o parâmetro 'Transferir faturamento do romaneio para outra empresa' nas duas empresas.</div>
+        <div>. 14626 Baixa de pedidos: algumas vezes não fatura um pedido por x motivo e queria saber se pode confirmar os pedidos sem gerar nota fiscal, pois ela cancela para isso acontecer. E não é possível.</div>
+        <div>. 14653 Rejeição NFe Erro 225: Os números do item do cliente estavam com 0000 na frente, e o SEFAZ não permite a autorização se os números do item do cliente estiverem nesse padrão. Para corrigir, teria que voltar todo o processo, editar o pedido  retirar os zeros na frente dos números.</div>
+        <div>. 14707 Romaneio PL não encontrado: gerou um romaneio PL, página ficou carregando e caiu, o pedido continuou com a situação "Em romaneio", mas o romaneio não foi encontrado. Foi instruído a duplicar o pedido e cancelar o que não foi encontrado na tela de romaneios, e faturar a partir do novo pedido.</div>
+    </section>
+    <section> <!--SACs de Comercial parte 2-->
+        <div>. 14718 Carta de correção: autorizou uma nota, mas o cliente mudou a transportadora, e ele gerou uma carta de correção, e queria vincular a nota no conhecimento de frete, mas aparece a transportadora antiga. Mas no conhecimento de frete, o que vai importar é o que consta na nota fiscal, e não o que está na carta de correção. Para ele corrigir, teria que inutilizar a nota e gerar outra.</div>
+        <div>. 14762 Denegação de nota fiscal: uma nota foi denegada, o motivo foi a destinatária estar com irregularidades no SEFAZ, para corrigir a situação, a própria destinatária teria que regularizar sua situação no SEFAZ.</div>
+        <div>. 14768 Lentidão na geração de romaneio: a leentidão se deu por ter uma VIEW rodando no momento em que o romaneio foi gerado. Como o sistema ficou um pouco lento e considerando o peso do romaneio, o romaneio não foi gerado.</div>
+        <div>. 14844 Venda sem desconto: no CLoja, a cliente fez uma venda, a nota fiscal estava autorizada, mas esqueceu de incluir o desconto. Não era possível cancelar a nota fiscal pelo prazo que passou, e foi instruída a fazer uma nota de devolução, para depois fazer a venda certa.</div>
+        <div>. 14893 DIFAL na NFe: ao emitir NFe, puxa DIFAL nos dados adicionais. Mas o DIFAL só aparece na nota fiscal se o tipo de pedido usado tem o checkbox 'Consumidor final' marcado.</div>
+        <div>. 14913 Desconto não consta na NFe: pedido faturado não consta o desconto no valor total na parcela. E ao abater o valor no financeiro, o mesmo fica incorreto sem desconto, como na nota fiscal. Aconteceu que a política comercial foi alterada depois do preço estar definido, e por isso o desconto foi zerado, o preço ficou o mesmo por ter sido cadastrado antes. Na tela de contas a receber, ela poderia editar o valor do desconto e especificar o motivo.</div>
+        <div>. 14959 Tabela de preços: perguntou se é possível fazer com que um pedido diverso não puxe o preço da referência cadastrado na tabela de preço padrão. Ela pdoeria usar os custos das referências para incluir no pedido.</div>
+        <div>. 14964 Itens duplicados em uma NFe: queria faturar 2 itens iguais separadamente, mas que constem em uma nota fiscal. Era preciso fazer a configuração de itens e ao gerar romaneio, considerar todo o pedido.</div>
+        <div>. 15033 Bloqueio de compra de referência: perguntou em que tela é feito bloqueio de referência, para a mesma não ser comercializada. Para isso, existe a tela 'Bloqueio de referência - romaneio'.</div>
+    </section>
+    <section> <!--SACs de Comercial parte 3-->
+        <div>. 15085 Cancelamento de devolução: fez uma nota de devolução com a operação incorreta, e queria saber como retornar ao início do processo e gerar outra nota. Teria que inutilizar a nota, devolver o documento até o início e ao chegar no início do processo cancelar tudo, e depois fazer a nota de devolução com a legenda certa.</div>
+        <div>. 15101 Liberar estoque para representante: perguntou se tem como mostrar para o representante a disponibilidade de estoque, no caso, apenas o saldo final, disponível. Foi instruída a usar os checkboxes de estoque físico e reservados de pedido e romaneio (Tela Comercial-Representantes-Cadastros-Configurações pedido online/offline/mobile).</div>
+        <div>. 15138 Edição do tipo de pedido: um romaneio estava expedido, mas não tinha emitido NF ainda, queria auxílio para editar o pedido. Teria que voltar desde o início e suspender o pedido, para editar o pedido.</div>
+        <div>. 15150 Estoque no Vesti não atualiza: ao subir as referências no Vesti, o estoque segue como zerado, mesmo que no CTêxtil tenham estoque disponível. Mas haviam pedidos suspensos no Vesti com aquelas referências, então o estoque zerou por causa deles.</div>
+    </section>
+    <section> <!--SACs de Produção-->
+        <h3>Produção</h3>
+        <div>. 14501 Controle de OP: cadastrou a fase errada na OP, e queria corrigir. Não tinha como se as fases foram movimentadas e as peças distribuídas, ou ela cancelava tudo e começava do zero, ou continuava como estava.</div>
+        <div>. 14597 Grade não aparece para editar: a grade para editar, na tela de PCP Manual, na aba de editar MPS, não aparece. Foi visto que a ficha técnica da referência estava pronta, depois foi feita a MPS. Houve a exclusão dos dados da ficha, por isso a grade não aparecia. Ela teria que completar a ficha e liberar.</div>
+        <div>. 14715 Relatório de peças produzidas: quer gerar um relatório para ver quantidade de peças produzidas no mês. Foi exibida a tela 'Produção-Consultas-Extrato de produção'.</div>
+        <div>. 14974 Movimentação de fase: não consegue movimentar uma fase da OP, pois há o aviso 'Outro usuário movimentando a OP'. A OP fica bloqueada pois em algum momento dois usuários tentaram movimentá-la. Apenas o administrador do sistema pode clicar no ícone do cadeado (trava de segurança) na tela de OP para desbloquear.</div>
+        <div>. 15019 Edição de grade no controle PLN: tenta editar grade após confirmar um pedido PLN, e não consegue pois aparecce o aviso 'Não foi possível atualizar a quantidade informada, já existe pedido para este PL'. Só é possível editar as informações antes de confirmar o pedido. Depois de confirmado, é impossível alterar a grade.</div>
+        <div>. 15050 Dúvida sobre remonte: apontou 80 peças para remonte, e queria fazer com que retornasse para a OP normal, a sua preocupação seria a relação da OP com o pedido. Era impossível reverter ou alterar a grade. O correto seria seguir a produção normal e dar continuidade, e quanto ao faturamento, iria constar como remonte, e que não iria alterar em nada no pedido.</div>
+        <div>. 15089 OP com grade incorreta: em uma fase, haviam 285 peças produzidas, na fase seguinte, há apenas 235 peças entregues para produção. Foi visto no histórico da movimentação da OP que um usuário alterou a grade para menos, resultando nas 235 peças.</div>
+        <div>. 15161 Edição de medidas: queria editar o tamanho âncora de uma referência, e não consegue pois 'Existem cadastros relacionados'. Já haviam medidas cadastradas para os tamanhos da referência. Ele poderia excluir tudo e cadastrar de novo, ou informar o tamanho para fazer o ajuste na 'Manutenção do sistema-Acessórios'.</div>
+    </section>
+    <section> <!--SACs de Estoque-->
+        <h3>Estoque</h3>
+        <div>. 14821 Demora na geração de relatórios: o relatório geral de estoque, ao realizar a consulta, demorava cerca de 15min para ser gerado. e estava usando apenas um filtro. Mas o tempo que leva para carregar e ser gerado, varia de acordo com as informações solicitadas nos filtros.</div>
+        <div>. 14999 Erro no saldo de estoque: uma referência consta com reservas de pedido, mas não encontrou o pedido. Depois, foi encontrado um pedido atendido parcial com o saldo para atender, o mesmo que constava ao consultar a disponibilidade de estoque do produto.</div>
+        <div>. 15148 Saldo negativo de estoque: ao fazer um balanço total de produto acabado, e ao puxar um relatório de disponibilidade de produto acabado, algumas referências estão com o saldo negativo e outras não. As referências em negativo estavam com reservas em romaneio. O estoque físico das peças era menor que a quantidade reservada, e excluiu o romaneio que gerou a reserva.</div>
+    </section>
+    <section> <!--SACs de Financeiro-->
+        <h3>Financeiro</h3>
+        <div>. 14765 Transferência de valores: na movimentação do caixa, o valor do pagamento em cheque está correto. E na transferência de valores, o valor do pagamento com cheque está igual ao valor do pagamento com cartão de crédito. A condição de pagamento estava incorreta, e definida como cheque, sendo que foi feito pagamento com cartão de crédito. Foi estornado o guichê, estornada a venda, e foi editada a condição de pagamento.</div>
+        <div>. 14773 Alteração do preço de venda: ao cadastrar peças para venda, queria trocar e dar as mesmas como brinde, no momento de alterar o desconto, queria zerar o saldo. Para ela dar continuidade, teria que deixar a venda de graça, e redefinir os impostos para uma legenda de brinde ou bonificação.</div>
+        <div>. 14831 Arquivo de retorno: tentou importar arquivo de retorno para o CTêxtil e não conseguiu, porém o arquivo estava em formato CNAB240. O sistema só aceita formato CNAB400.</div>
+        <div>. 14852 Encerramento de caixa: queria tirar um relatório da movimentação do caixa aberto, e depois encerrar o caixa. Foi informada de duas telas do CLoja que realizam tais procedimentos 'apuração de guichê' e 'movimentações de guichê'.</div>
+        <div>. 14881 Botão de estornar não aparece: o botão "Estornar" não aparece para uma usuária, na tela de Remessa de Cobrança Bancária. Portanto, somente quem tem acesso a esse botão são os administradores.</div>
+        <div>. 14882 Estorno de título pago Pagfor: precisava estornar um título a pagar (pela Pagfor), e informou que o fornecedor devolveu o pagamento. Foi ajustado manualmente pelo Ronaldo na mobilidade da Pagfor, e cliente conseguiu estornar o título.</div>
+        <div>. 14696 Estorno de lote de pagamento: tentou estornar um lote de pagamento de um título, mas não conseguiu estornar pela data de movimentação do banco estar incorreta, pois pagou no dia 09/11, mas no sistema aparece como pago dia 14/11. O ajuste da data foi feito pelo Ronaldo, para a cliente conseguir estornar.</div>
+    </section>
+    <section> <!--SACs de Fiscal/Contábil-->
+        <h3>Fiscal/Contábil</h3>
+        <div>. 14521 Alteração de impostos no pedido: ao fazer a nota de importação, no momento de editar os impostos, não altera e não aparece no pedido. O tipo de pedido não estava relacionado com a legenda desejada.</div>
+        <div>. 14594 Faturamento de nota: uma nota foi rejeitada com erro no ICMS. O ICMS e a CST estavam cadastrados incorretamente.</div>
+        <div>. 14646 Não conseguiu importar XML: não conseguiu importar XML de um prestador de serviços MEI, pois aparece o aviso 'O XML não pertence ao fornecedor selecionado'. O sistema não importa XML de nota fiscal de serviço.</div>
+        <div>. 14811 Entrada de nota fiscal via XML: ao importar o XML de uma nota fiscal, era para sair dois itens, mas sai outros. Os itens deveriam estar cadastrados, mas os que estavam sendo puxados tinham o mesmo código que na nota. Para corrigir, podia copiar as referências incorretas, mudar os códigos, excluir as referências originais e depois de tudo, incluir os itens certos com os códigos certos.</div>
+        <div>. 14894 Legendamento de NFe: tenta legendar nota fiscal de entrada, mas não encontra a legenda desejada. Porém, o emitente não continha Inscrição Estadual, e não havia cadastro de impostos para Não Contribuintes.</div>
+        <div>. 14989 Base de Cálculo ICMS: perguntou se é possível legendar a nota com os itens mais o valor do frete. Como o frete é só um acréscimo, quando legenda as notas de entrada, somente os itens são legendados. Valores como descontos, fretes ou acréscimos não são constados no legendamento. Foi informada que se quisesse editar manualmente a base de cálculo do ICMS e informar o valor total da nota.</div>
+        <div>. 15009 Índice de Presença: perguntou se é possível informar se um pedido foi feito de modo presencial, para não pagar o DIFAL. Ao incluir um pedido, na digitação de pedidos e nos pedidos de entradas e saídas diversas, tem o campo 'Índice de Presença', que informa como foi feito o pedido.</div>
+    </section>
+    <section> <!--SACs de Suprimentos-->
+        <h3>Suprimentos</h3>
+        <div>. 14488 Solicitação de Requisições: a tela 'solicitação de requisições' de uma funcionária cadastrada inicialmente na NewGriff com seu setor definido na mesma está liberada, mas na ModaPrima não aparece. Isso se dá porque o sistema não permite fazer requisição em uma empresa, estando cadastrada em outra.</div>
+        <div>. 14859 Dificuldade ao estornar NF: um usuário tenta estornar a nota fiscal no beneficiamento de materiais e dá a mensagem 'Não foi possível estornar a entrada no estoque desta nota de retorno. Verifique se existe disponibilidade de estoque para efetuar o estorno.' Foi visto que tinha uma transferência de estoque de um dos itens do retorno, e deveria transferir novamente para o grupo de armazenamento de origem.</div>
+        <div>. 14909 Atendimento de requisição: não consegue atender a requisição, pois dá aviso de 'Estoque insuficiente para baixar a requisição', foi constatado que as peças estavam reservadas para OPs, e não é possível atender requisição com peças em reserva.</div>
+        <div>. 15066 Atendimento de requisição: tenta atender requisição e aparece aviso de `Error type: Load XML, Description: Incorrect XML`. Foi instruída a atender a requisição aos poucos, pois havia muitos itens.</div>
+        <div>. 15149 Exclusão no beneficiamento: pediu auxílio para excluir itens no retorno de beneficiamento. Foi instruída a estornar os itens um por um. Havia alguns itens que ela teria que dar entrada no estoque para conseguir estornar todos os itens.</div>
+    </section>
+</body>
+</head>
+</html>

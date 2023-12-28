@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./aha.jpg);
+    background-attachment: fixed;
+}
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    height: 30px;
+    padding: 35px 0;
+    font-size: 30px;
+    font-style: italic;
+}
+h3 {
+    color:white;
+    font-style: italic;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+section {
+    color: white;
+    margin: 50px;
+}
+div {
+    max-width: 90%; 
+    margin: 5px auto; 
+    padding: 6px; 
+    font-size: 20px;
+    font-style: italic;
+}
+@media screen and (max-width: 670px) {
+    header {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        height: 50px;
+        padding: 55px 0;
+        font-size: 50px;
+    }
+    h3 {
+        font-size: 45px;
+        justify-content: center;
+        align-items: center;
+    }
+    section {
+        margin: 25px;
+    }
+    div {
+        max-width: 85%;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    header {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        height: 40px;
+        padding: 45px 0;
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 35px;
+        justify-content: center;
+        align-items: center;
+    }
+    section {
+        margin: 20px;
+    }
+    div {
+        max-width: 85%;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 290px) {
+    header {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        height: 30px;
+        padding: 35px 0;
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    section {
+        margin: 20px;
+    }
+    div {
+        max-width: 85%;
+        font-size: 14px;
+    }
+}
